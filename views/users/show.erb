@@ -1,0 +1,14 @@
+<form id="description_form"action="/users/<%=@user[:id]%>" method="post">
+  <h1> <%= @user[:name]%> <%= @user[:last_name]%> </h1>
+  <p>Email: <%= @user[:email]%> </p>
+  <p>Age: <%= @user[:age]%> </p>
+  <p>Address: <%= @user[:address]%> </h1>
+  <br>
+  <br>
+  <center>
+  <button><a href="/users/<%= @user[:id]%>/edit">Edit </a></button>
+  <input type="hidden" name="_method" value="delete">
+  <input class="button" onclick="return confirm('Are you sure?')" type="submit" name="delete" value="Delete">
+  <button><a href="/users">Back</a></button>
+  </center>
+</form>

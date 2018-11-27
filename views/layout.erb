@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <title >List of users</title>
+  </head>
+
+  <body>
+    <ul id="menu">
+     <li><a href="/users" id="home">Home</a></li>
+     <li><a href="/users/new" id="crear">Create user</a></li>
+    </ul>
+
+    <%= yield %>
+
+    <div class="container">
+       <%if flash[:notice]%>
+         <p class="alert alert-success"><%= flash[:notice]%>
+       <%else%>
+         <p class="alert alert-danger"><%= flash[:error]%>
+       <%end%>
+    </div>
+
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+    <script>
+      //** removes alerts after 4 seconds */
+      window.setTimeout(function() {
+        $(".alert").fadeTo("slow", 0 ).slideUp(400, function(){
+          $(this).remove();
+        });
+      }, 4000);
+    </script>
+  </body>
+</html>
