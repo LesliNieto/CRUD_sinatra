@@ -1,0 +1,157 @@
+h1{
+  text-align: center;
+}
+
+p{
+  font-size: 20px;
+}
+
+#user_form, #description_form, #edit_form{
+  width: 400px;
+  height: 400px;
+  padding-left: 20px;
+  padding-top: 15px;
+  background-color: #CCEEFF;
+  border-radius: 20px;
+  margin:0 auto;
+}
+
+#search_div{
+  width: 500px;
+  height: 50px;
+  padding-left: 90px;
+}
+
+a{
+  font-size: 20px;
+  font-family: "Times New Roman";
+  text-decoration: none;
+  color: black;
+}
+
+#email{
+  margin-left: 25px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#age{
+  margin-left: 35px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.container{
+  text-align: center;
+  padding-right:400px;
+  padding-left:400px;
+  margin-right:auto;
+  margin-left:auto;
+}
+
+.alert-danger{
+  color:#b94a48;
+  background-color:#f2dede;
+  border-color:#eed3d7;
+  border-top-color:#e6c1c7;
+}
+
+.alert-success{
+  color:#468847;
+  background-color:#dff0d8;
+  border-color:#d6e9c6;
+}
+
+label{
+  font-size: 20px;
+}
+
+input {
+  border-radius: 10px;
+  color: black;
+  background-color: white;
+  font-size: 20px;
+  font-family: "Times New Roman";
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+input.button, button {
+  border-radius: 10px;
+  color: black;
+  background-color: #8F9693;
+  font-size: 20px;
+  font-family: "Times New Roman";
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+input, button:hover{
+  cursor: hand;
+}
+
+#menu{
+  padding: 0;
+}
+
+#menu li a {
+  padding: 10px;
+  height: 50px;
+  width: 110px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  border-radius: 0 5px 5px 0;
+}
+
+#menu li {
+  display: inline;
+}
+
+#crear, #home {
+  background-color: #A4D7ED;
+}
+
+#menu a:hover {
+  background-color: #CCEEFF;
+}
+
+#user_table, #user_table1{
+  border-collapse: collapse;
+  width: 80%;
+  margin:0 auto;
+}
+
+#user_table1 td, #user_table1 th, #user_table td, #user_table th {
+  border: 2px solid black;
+  padding: 5px;
+  font-size: 25px;
+}
+
+#user_table1 tr:nth-child(even), #user_table tr:nth-child(even) {
+  background-color: #F7F9FA;
+}
+
+#user_table1 tr:nth-child(odd), #user_table tr:nth-child(odd) {
+  background-color: #F7F9FA;
+}
+
+#user_table tr:hover {
+  background-color: #dddd;
+}
+
+#user_table th, #user_table1 th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #CCEEFF;
+  color: black;
+  font-size: 25px;
+  text-align: center;
+}
